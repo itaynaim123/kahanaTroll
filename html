@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahana Alert</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.myjewishlearning.com/wp-content/uploads/2009/08/Meir-Kahane-1024x578.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        // This function runs when the page loads
+        function showAlert() {
+            alert("Kahana was right ya smolani masriach!");
+        }
+
+        // This function redirects to the provided link
+        function redirectToLink() {
+            window.location.href = "https://www.rabbikahane.org/books/%D7%97%D7%95%D7%91%D7%A8%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%9B%D7%94%D7%A0%D7%90%20%D7%A6%D7%93%D7%A7%20%D7%9C%D7%90%D7%95%D7%A8%D7%9A%20%D7%9B%D7%9C%20%D7%94%D7%93%D7%A8%D7%9A/";
+        }
+    </script>
+</head>
+<body onload="showAlert()">
+    <h1>Welcome!</h1>
+    <button onclick="redirectToLink()">Click Me</button>
+</body>
+</html>
